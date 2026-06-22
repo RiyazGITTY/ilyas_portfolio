@@ -1,93 +1,154 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
+body{
+font-family:Arial;
+background:#091825;
+color:white;
 }
 
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #000, #333);
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1400') center/cover;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.hero h1 {
-    font-size: 42px;
-    color: #f5c518;
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.65);
 }
 
-.hero p {
-    margin-top: 10px;
-    font-size: 20px;
+.hero-content{
+position:relative;
+z-index:2;
+padding:20px;
 }
 
-.contact-buttons {
-    margin-top: 30px;
+.logo{
+width:240px;
+margin-bottom:20px;
 }
 
-.contact-buttons a {
-    text-decoration: none;
-    background: #f5c518;
-    color: black;
-    padding: 12px 20px;
-    margin: 5px;
-    border-radius: 8px;
-    font-weight: bold;
+h1{
+font-size:48px;
 }
 
-section {
-    padding: 60px 20px;
+h2{
+margin-bottom:20px;
 }
 
-h2 {
-    text-align: center;
-    color: #f5c518;
-    margin-bottom: 30px;
+h3{
+color:#ff2b63;
+margin:20px 0;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 20px;
+.buttons a{
+display:inline-block;
+margin:8px;
+padding:14px 22px;
+background:#ff2b63;
+color:white;
+text-decoration:none;
+border-radius:10px;
 }
 
-.card {
-    background: #222;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 18px;
+section{
+padding:70px 20px;
 }
 
-.contact-form form {
-    max-width: 500px;
-    margin: auto;
+.about,.services,.gallery,.contact,.testimonial{
+max-width:1200px;
+margin:auto;
+text-align:center;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 8px;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
-button {
-    width: 100%;
-    padding: 15px;
-    background: #f5c518;
-    border: none;
-    font-weight: bold;
-    border-radius: 8px;
+.card{
+background:#132a3a;
+padding:30px;
+border-radius:15px;
+font-size:20px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
+.stats{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.stat{
+font-size:42px;
+font-weight:bold;
+color:#ff2b63;
+}
+
+.stat span{
+display:block;
+font-size:18px;
+color:white;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.review{
+background:#132a3a;
+padding:30px;
+border-radius:15px;
+}
+
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+padding:15px 20px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+z-index:999;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+h1{
+font-size:32px;
+}
+.logo{
+width:180px;
+}
 }
