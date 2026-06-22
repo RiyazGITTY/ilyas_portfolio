@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #000, #333);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #f5c518;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.contact-buttons {
+    margin-top: 30px;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    background: #f5c518;
+    color: black;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #f5c518;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #f5c518;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
